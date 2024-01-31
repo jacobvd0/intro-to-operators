@@ -31,9 +31,19 @@ int main()
     std::cout << "The 2 numbers entered are " << first << " and " << second << "\n";
     std::cout << first << " + " << second << " = " << (first + second) << "\n";
     std::cout << first << " - " << second << " = " << (first - second) << "\n";
-    std::cout << first << " / " << second << " = " << (first / second) << "\n";
+    if (first != 0 && second != 0) {
+        std::cout << first << " / " << second << " = " << (first / second) << "\n";
+    }
+    else {
+        std::cout << "You can't divide by 0\n";
+    }
     std::cout << first << " * " << second << " = " << (first * second) << "\n";
-    std::cout << first << " % " << second << " = " << (first % second) << "\n";
+    if (first != 0 && second != 0) {
+        std::cout << first << " % " << second << " = " << (first % second) << "\n";
+    }
+    else {
+        std::cout << "You can't divide by 0\n";
+    }
 
     std::cin.ignore(std::cin.rdbuf()->in_avail());
     std::cin.get();
